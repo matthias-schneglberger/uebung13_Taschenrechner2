@@ -316,19 +316,19 @@ public class MainActivity extends AppCompatActivity{
         return mainStack.pop();
     }
     private static double eval(String num, String num2, String op){
-        double numInt = Double.valueOf(num);
-        double num2Int = Double.valueOf(num2);
+        double numDouble = Double.valueOf(num);
+        double num2Double = Double.valueOf(num2);
 
         switch(op)
         {
             case "+":
-                return(num2Int+numInt);
+                return(num2Double+numDouble);
             case "-":
-                return(num2Int- numInt);
+                return(num2Double- numDouble);
             case "/":
-                return(num2Int/numInt);
+                return(num2Double/numDouble);
             case "*":
-                return(num2Int*numInt);
+                return(num2Double*numDouble);
         }
         return 0.0;
     }
